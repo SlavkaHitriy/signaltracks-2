@@ -1,37 +1,117 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+  },
+  env: {
+    node: true,
+    browser: true,
+  },
+  plugins: ['react', 'jsx-a11y', 'react-hooks', 'unused-imports'],
+  ignorePatterns: ['/public/scripts/**.js'],
+  rules: {
+    'react/jsx-no-useless-fragment': 'warn',
+    'new-cap': 'warn',
+    'no-unused-expressions': 'warn',
+    'jsx-a11y/label-has-associated-control': 'warn',
+    'import/no-named-default': 'warn',
+    'no-promise-executor-return': 'warn',
+    'import/order': 'warn',
+    'import/no-internal-modules': 'off',
+    'boundaries/element-types': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'react/no-invalid-html-attribute': 'warn',
+    'react/jsx-filename-extension': [
+      2,
+      {
+        extensions: ['.js', '.jsx', '.tsx'],
+      },
     ],
-    "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
+    camelcase: 'off',
+    'import/no-unresolved': 'off',
+    'import/prefer-default-export': 'off',
+    'no-unused-vars': 'off',
+    'react/require-default-props': 'off',
+    'comma-dangle': [
+      'warn',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'never',
+      },
+    ],
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/function-component-definition': 'off',
+    'no-shadow': 'off',
+    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'no-underscore-dangle': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'no-param-reassign': 'warn',
+    'react/jsx-no-bind': 'warn',
+    'react/no-array-index-key': 'warn',
+    'arrow-body-style': 'off',
+    'no-undef': 'off',
+    'react/no-unstable-nested-components': 'warn',
+    'react/button-has-type': 'off',
+    'object-curly-newline': 'off',
+    'operator-linebreak': [
+      'error',
+      'none',
+      {
+        overrides: {
+          '=': 'after',
+          '?': 'before',
+          ':': 'before',
+          '&&': 'after',
+          '||': 'after',
         },
+      },
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
+    'no-control-regex': 0,
+    'react/jsx-max-props-per-line': 'off',
+    'no-multiple-empty-lines': [2, { max: 1 }],
+    'arrow-parens': ['error', 'as-needed'],
+    'linebreak-style': 'off',
+    'react/jsx-wrap-multilines': [
+      'error',
+      {
+        declaration: 'parens',
+        assignment: 'parens',
+        return: 'parens',
+        arrow: 'parens',
+        condition: 'ignore',
+        logical: 'ignore',
+        prop: 'ignore',
+      },
     ],
-    "rules": {
-        "react/react-in-jsx-scope": "off",
-        "no-unused-vars": "warn",
-        "no-undef": "warn",
-        "react/prop-types": "off",
-        "react/display-name": "off",
-    }
-}
+    'max-len': [
+      'error',
+      {
+        ignoreComments: true,
+        code: 125,
+      },
+    ],
+    semi: ['error', 'never'],
+    quotes: ['error', 'single'],
+    indent: [
+      'warn',
+      2,
+      {
+        ignoredNodes: ['TemplateLiteral'],
+        SwitchCase: 1,
+      },
+    ],
+  },
+};

@@ -1,63 +1,60 @@
-import { SettingsIcon } from '@/assets/icons/SettingsIcon';
-import { DashboardIcon } from '@/assets/icons/DashboardIcon.jsx';
-import { AssetMapViewIcon } from '@/assets/icons/AssetMapViewIcon.jsx';
-import { AssetListingIcon } from '@/assets/icons/AssetListingIcon.jsx';
-import { DevicesIcon } from '@/assets/icons/DevicesIcon.jsx';
-import { EventsIcon } from '@/assets/icons/EventsIcon.jsx';
-import { ReportingIcon } from '@/assets/icons/ReportingIcon.jsx';
-import { MessagesIcon } from '@/assets/icons/MessagesIcon.jsx';
-import { SupportIcon } from '@/assets/icons/SupportIcon.jsx';
+import { SettingsIcon } from '@/assets/icons/SettingsIcon'
+import { ReportingIcon } from '@/assets/icons/ReportingIcon.jsx'
+import { CompanyIcon } from '@/assets/icons/CompanyIcon.jsx'
+import { MachinesIcon } from '@/assets/icons/MachinesIcon.jsx'
+import { DashboardIcon } from '@/assets/icons/DashboardIcon.jsx'
+import { ProductionIcon } from '@/assets/icons/ProductionIcon.jsx'
+import { WorkflowsIcon } from '@/assets/icons/WorkflowsIcon.jsx'
+import { LogoutIcon } from '@/assets/icons/LogoutIcon.jsx'
+import { HelpIcon } from '@/assets/icons/HelpIcon.jsx'
 
 export const mainMenu = [
-    {
-        title: 'Dashboard',
-        link: '/dashboard',
-        icon: <DashboardIcon />,
-    },
-    {
-        title: 'Asset Mapview',
-        link: '/asset-mapview',
-        icon: <AssetMapViewIcon />,
-    },
-    {
-        title: 'Asset Listing',
-        link: '/asset-listing',
-        icon: <AssetListingIcon />,
-    },
-    {
-        title: 'Devices',
-        link: '/devices',
-        icon: <DevicesIcon />,
-    },
-    {
-        title: 'Events',
-        link: '/events',
-        icon: <EventsIcon />,
-        statusCode: 3,
-        notificationsCount: 200,
-    },
-    {
-        title: 'Reporting',
-        link: '/reporting',
-        icon: <ReportingIcon />,
-    },
-];
+  {
+    title: 'Company',
+    link: '/dashboard',
+    icon: <CompanyIcon />,
+  },
+  {
+    title: 'Machines',
+    link: '/asset-mapview',
+    icon: <MachinesIcon />,
+  },
+  {
+    title: 'Dashboards',
+    link: '/asset-listing',
+    icon: <DashboardIcon />,
+  },
+  {
+    title: 'Reports',
+    link: '/devices',
+    icon: <ReportingIcon />,
+  },
+  {
+    title: 'Production',
+    link: '/events',
+    icon: <ProductionIcon />,
+  },
+  {
+    title: 'Workflows',
+    link: '/reporting',
+    icon: <WorkflowsIcon />,
+  },
+]
 
 export const systemMenu = [
-    {
-        title: 'Messages',
-        link: '/messages',
-        icon: <MessagesIcon />,
-        notificationsCount: 200,
-    },
-    {
-        title: 'Settings',
-        link: '/settings',
-        icon: <SettingsIcon />,
-    },
-    {
-        title: 'Support',
-        link: '/support',
-        icon: <SupportIcon />,
-    },
-];
+  {
+    title: 'Help',
+    link: '/messages',
+    icon: <HelpIcon />,
+  },
+  {
+    title: 'Settings',
+    link: '/settings',
+    icon: <SettingsIcon />,
+  },
+  {
+    title: 'Log out',
+    link: '/support',
+    icon: <LogoutIcon />,
+  },
+]
