@@ -56,6 +56,7 @@ export const Sidebar = () => {
         flex={1}
         sx={{
           overflowY: 'auto',
+          overflowX: 'hidden',
           '&::-webkit-scrollbar': {
             width: '4px',
           },
