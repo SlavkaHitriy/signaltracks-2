@@ -1,1 +1,1 @@
-export * from './DefaultInput.jsx';
+export * from './DefaultInput.jsx'

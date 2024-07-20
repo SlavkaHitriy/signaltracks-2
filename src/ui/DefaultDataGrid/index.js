@@ -1,1 +1,1 @@
-export * from './DefaultDataGrid.jsx';
+export * from './DefaultDataGrid.jsx'

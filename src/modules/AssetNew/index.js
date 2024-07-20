@@ -1,1 +1,1 @@
-export * from './AssetNew.jsx';
+export * from './AssetNew.jsx'

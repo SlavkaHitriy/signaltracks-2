@@ -1,1 +1,1 @@
-export * from './Settings.jsx';
+export * from './Settings.jsx'

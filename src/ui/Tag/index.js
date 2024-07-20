@@ -1,1 +1,1 @@
-export { Tag } from './Tag.jsx';
+export { Tag } from './Tag.jsx'

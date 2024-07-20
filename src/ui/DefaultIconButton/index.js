@@ -1,1 +1,1 @@
-export * from './DefaultIconButton.jsx';
+export * from './DefaultIconButton.jsx'

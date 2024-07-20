@@ -14,6 +14,7 @@ module.exports = {
   plugins: ['react', 'jsx-a11y', 'react-hooks', 'unused-imports'],
   ignorePatterns: ['/public/scripts/**.js'],
   rules: {
+    'import/no-absolute-path': 'off',
     'react/jsx-no-useless-fragment': 'warn',
     'new-cap': 'warn',
     'no-unused-expressions': 'warn',
@@ -114,4 +115,4 @@ module.exports = {
       },
     ],
   },
-};
+}

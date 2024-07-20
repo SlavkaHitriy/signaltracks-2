@@ -3,40 +3,27 @@ import shadows from '@mui/material/styles/shadows'
 
 export const theme = createTheme({
   palette: {
-    primary: {
-      main: '#06152B',
-      dark: '#151D26',
+    accents: {
+      blue: '#1E75FF',
+      darkBlue: '#677AF0',
+      yellow: '#FFBC24',
     },
-    secondary: {
-      main: '#1E75FF',
-      dark: '#0944a5',
-    },
-    common: {
-      black: '#121212',
-      white: '#fff',
-    },
-    grey: {
-      main: '#9E9E9E',
-      light: '#d5d5d5',
-      blue: '#8F98AB',
-      200: '#F5F7FA',
-      300: '#f4f4f4',
-    },
-    red: {
+    background: '#FFFFFF',
+    error: {
       main: '#FF3941',
-      light: '#ED373B',
     },
-    blue: {
-      main: '#0084FF',
-      light: '#F6F8FA',
+    success: {
+      main: '#18AB87',
     },
-    green: {
-      main: '#1AD598',
-      dark: '#14b28c',
-      light: '#D1F7EA',
-    },
-    orange: {
-      main: '#FEBC2E',
+    main: '#151D26',
+    neutral: {
+      50: '#E6E7E8',
+      100: '#B2B6B8',
+      200: '#8C9295',
+      300: '#586065',
+      400: '#374147',
+      500: '#051219',
+      700: '#040D12',
     },
   },
   shadows: {
@@ -47,7 +34,7 @@ export const theme = createTheme({
   typography: {
     allVariants: {
       fontSize: 14,
-      color: '#151D26',
+      color: '#374147',
     },
   },
   components: {

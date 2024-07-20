@@ -23,7 +23,7 @@ export const Sidebar = () => {
       component='aside'
       width={isOpened ? 216 : 72}
       flexShrink={0}
-      bgcolor='primary.dark'
+      bgcolor='main'
       boxShadow={theme.shadows[1]}
       position='relative'
       zIndex={11}
@@ -62,7 +62,7 @@ export const Sidebar = () => {
           },
           '&::-webkit-scrollbar-thumb': {
             width: '4px',
-            bgcolor: 'grey.400',
+            bgcolor: 'neutral.400',
           },
         }}
       >
@@ -93,7 +93,7 @@ export const Sidebar = () => {
         <Box
           sx={{
             borderRadius: '4px',
-            bgcolor: 'common.white',
+            bgcolor: 'background',
             py: 1,
             mx: isOpened ? 2 : 1.5,
             mt: 1,
@@ -117,7 +117,7 @@ export const Sidebar = () => {
               height: isOpened ? '20px' : 0,
             }}
           >
-            <Typography fontWeight={500} color='#040D12' whiteSpace='nowrap'>
+            <Typography fontWeight={500} color='neutral.700' whiteSpace='nowrap'>
               InMetal Inc
             </Typography>
           </Box>

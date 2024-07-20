@@ -1,1 +1,1 @@
-export * from './ColorStatus.jsx';
+export * from './ColorStatus.jsx'

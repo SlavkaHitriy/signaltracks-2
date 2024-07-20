@@ -18,7 +18,7 @@ export const SidebarItem = ({ data, isOpened }) => {
           sx={{
             pointerEvents: isActive ? 'none' : 'auto',
             transition: 'all 0.3s ease',
-            bgcolor: isActive ? 'common.white' : 'transparent',
+            bgcolor: isActive ? 'background' : 'transparent',
             borderRadius: '2px',
             '&:hover': {
               svg: {

@@ -1,1 +1,1 @@
-export * from './DefaultCircularProgress.jsx';
+export * from './DefaultCircularProgress.jsx'
