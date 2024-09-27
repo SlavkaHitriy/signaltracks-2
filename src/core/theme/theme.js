@@ -36,6 +36,48 @@ export const theme = createTheme({
       fontSize: 14,
       color: '#374147',
     },
+    body: {
+      fontSize: 14,
+      color: '#374147',
+      fontWeight: 400,
+      lineHeight: '16px',
+    },
+    bodyMedium: {
+      fontSize: 14,
+      color: '#374147',
+      fontWeight: 500,
+      lineHeight: '16px',
+    },
+    caption: {
+      fontSize: 10,
+      color: '#051219',
+      fontWeight: 400,
+      lineHeight: '12px',
+    },
+    footnote: {
+      fontSize: 12,
+      color: '#374147',
+      fontWeight: 400,
+      lineHeight: '14px',
+    },
+    footnoteMedium: {
+      fontSize: 12,
+      color: '#374147',
+      fontWeight: 500,
+      lineHeight: '14px',
+    },
+    h1: {
+      fontSize: 32,
+      color: '#051219',
+      fontWeight: 500,
+      lineHeight: '38px',
+    },
+    h3: {
+      fontSize: 20,
+      color: '#051219',
+      fontWeight: 500,
+      lineHeight: '24px',
+    },
   },
   components: {
     MuiButton: {
@@ -90,6 +132,30 @@ export const theme = createTheme({
       defaultProps: {
         variant: 'outlined',
         fullWidth: true,
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#FFFFFF',
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#FFFFFF',
+          borderRadius: '16px',
+          border: '1px solid #E6E7E8',
+          padding: '6px 8px',
+          height: 'auto',
+        },
+        label: {
+          color: '#374147',
+          fontSize: 10,
+          lineHeight: '12px',
+          padding: 0,
+        },
       },
     },
   },

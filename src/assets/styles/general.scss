@@ -87,7 +87,6 @@ button {
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow-y: auto;
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -102,6 +101,7 @@ button {
 .main {
   flex-grow: 1;
   display: flex;
+  height: 100%;
 }
 
 .map-marker {

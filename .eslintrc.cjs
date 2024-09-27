@@ -101,7 +101,7 @@ module.exports = {
       'error',
       {
         ignoreComments: true,
-        code: 125,
+        code: 130,
       },
     ],
     semi: ['error', 'never'],

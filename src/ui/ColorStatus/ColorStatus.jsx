@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material'
 import { getStatusColor } from '@/core/functions/statusHelpers.js'
 
-export const ColorStatus = ({ code, size = 10 }) => {
+export const ColorStatus = ({ code, size = 8 }) => {
   return (
     <Box
       sx={{

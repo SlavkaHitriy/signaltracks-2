@@ -1,110 +1,37 @@
 export const items = [
   {
-    title: 'Trailer 4482-AB-TX-12',
-    temp: '68.5',
-    speed: 100,
-    tags: [
-      {
-        text: 'Moving',
-        textSize: 12,
-        borderColor: 'green.main',
-      },
-      {
-        text: '02',
-        textSize: 12,
-        borderColor: '#E1E3E8',
-        status: 1,
-      },
-    ],
+    title: 'Brother',
+    firstActive: '6:00 AM',
+    tag: '106338 OP2',
+    utilizationRate: 81.7,
+    utilizationDifference: 81.7,
   },
   {
-    title: 'Trailer 4482-AB-TX-12',
-    temp: '68.5',
-    speed: 100,
-    tags: [
-      {
-        text: 'Moving',
-        textSize: 12,
-        borderColor: 'green.main',
-      },
-      {
-        text: '02',
-        textSize: 12,
-        borderColor: '#E1E3E8',
-        status: 1,
-      },
-    ],
+    title: 'Mazak',
+    firstActive: '6:23 AM',
+    tag: 'No Operation',
+    utilizationRate: 84.5,
+    utilizationDifference: 69.2,
   },
   {
-    title: 'Trailer 4482-AB-TX-12',
-    temp: '68.5',
-    speed: 100,
-    tags: [
-      {
-        text: 'Moving',
-        textSize: 12,
-        borderColor: 'green.main',
-      },
-      {
-        text: '02',
-        textSize: 12,
-        borderColor: '#E1E3E8',
-        status: 3,
-      },
-    ],
+    title: 'Turning Center',
+    firstActive: '6:10 AM',
+    tag: '10313858',
+    utilizationRate: 72.9,
+    utilizationDifference: -5.2,
   },
   {
-    title: 'Trailer 4482-AB-TX-12',
-    temp: '68.5',
-    speed: 100,
-    tags: [
-      {
-        text: 'Idle',
-        textSize: 12,
-        borderColor: '#E1E3E8',
-      },
-      {
-        text: '02',
-        textSize: 12,
-        borderColor: '#E1E3E8',
-        status: 2,
-      },
-    ],
+    title: 'Brother',
+    firstActive: '6:00 AM',
+    tag: '106338 OP2',
+    utilizationRate: 81.7,
+    utilizationDifference: 81.7,
   },
   {
-    title: 'Trailer 4482-AB-TX-12',
-    temp: '68.5',
-    speed: 100,
-    tags: [
-      {
-        text: 'Moving',
-        textSize: 12,
-        borderColor: 'green.main',
-      },
-      {
-        text: '02',
-        textSize: 12,
-        borderColor: '#E1E3E8',
-        status: 1,
-      },
-    ],
-  },
-  {
-    title: 'Trailer 4482-AB-TX-12',
-    temp: '68.5',
-    speed: 100,
-    tags: [
-      {
-        text: 'Moving',
-        textSize: 12,
-        borderColor: 'green.main',
-      },
-      {
-        text: '02',
-        textSize: 12,
-        borderColor: '#E1E3E8',
-        status: 1,
-      },
-    ],
+    title: 'Vertical Mill, Palletized',
+    firstActive: '6:10 AM',
+    tag: '10313858',
+    utilizationRate: 72.9,
+    utilizationDifference: -5.2,
   },
 ]

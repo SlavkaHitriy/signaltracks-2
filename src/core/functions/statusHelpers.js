@@ -1,7 +1,7 @@
 export const getStatusColor = code => {
   switch (code) {
     case 1:
-      return 'green.main'
+      return 'success.main'
     case 2:
       return 'secondary.main'
     case 3:

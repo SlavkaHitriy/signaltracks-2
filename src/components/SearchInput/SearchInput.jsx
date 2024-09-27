@@ -10,36 +10,31 @@ export const SearchInput = ({ sx, name }) => {
 
   return (
     <Stack
-      direction="row"
+      direction='row'
       sx={{
-        bgcolor: 'blue.light',
-        border: '1px solid #E2E2EA',
-        borderRadius: '6px',
-        minWidth: '250px',
+        border: '1px solid',
+        borderColor: 'neutral.50',
+        borderRadius: '4px',
+        width: '100%',
         overflow: 'hidden',
-        height: 30,
+        height: 36,
         ...sx,
       }}
-      component="form"
+      component='form'
       onSubmit={handleSubmit}
     >
       <DefaultIconButton
         icon={<SearchIcon />}
         type='submit'
-        size="100%"
         sx={{
-          width: 45,
+          width: 36,
           borderRadius: 0,
-          backgroundColor: '#f8f8fa',
-          color: 'primary.main',
-
-          '&:hover': {
-            backgroundColor: '#f8f8fa',
-          },
+          color: 'neutral.100',
+          border: 0,
         }}
       />
       <DefaultInput
-        placeholder="Search..."
+        placeholder='Search...'
         name={name}
         sx={{
           width: '100%',
@@ -47,17 +42,16 @@ export const SearchInput = ({ sx, name }) => {
             display: 'none',
           },
           '.MuiInputBase-root': {
-            height: '30px',
             pr: 2,
-            pt: '1px',
             '&::after': {
               bottom: 1.5,
             },
           },
           '.MuiInputBase-input': {
             fontSize: 14,
-            bgcolor: '#F6F8FA',
-            borderRight: 0,
+            borderRadius: 0,
+            border: 0,
+            height: '36px',
           },
         }}
       />
